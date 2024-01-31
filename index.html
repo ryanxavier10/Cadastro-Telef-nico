@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Telefônico</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/telefone.png" alt="icone de um telefone">
+            <h1>Cadastro Telefônico</h1>
+        </header>
+        <form id="form">
+            <input type="text" id="nome-cadastro" required placeholder="Nome do Usuário" minlength="4">
+            <input type="tel" id="numero-cadastro" required placeholder="(xx) xxxxx-xxxx" minlength="11" maxlength="11">
+            <button type="submit">Cadastrar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome do Usuário
+                    </th>
+                    <th>
+                        Telefône
+                    </th>
+                    <th>
+                        Cadastrado ?
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Cliente</td>
+                    <td id="telefone">Contato</td>
+                    <td id="cadastro">Ativo</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
